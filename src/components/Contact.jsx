@@ -1,8 +1,8 @@
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-
 import { useState } from "react";
+import backgroundVideo from "../assets/7234993-uhd_3840_2160_30fps.mp4";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -45,25 +45,33 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="bg-[#ffffff] min-h-screen flex items-center justify-center">
-      <div className="max-w-[90%] md:max-w-[75%] mx-auto font-inter space-y-10 py-10">
+    <div id="contact" className="relative min-h-screen flex items-center justify-center">
+      <video
+        autoPlay
+        loop
+        muted
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      >
+        <source src={backgroundVideo} type="video/mp4" />
+      </video>
+      <div className="relative z-10 bg-[#FFFFFF] bg-opacity-80 max-w-[95%] md:max-w-[80%] mx-auto font-inter space-y-10 py-10 rounded-lg px-6 md:px-10">
         <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-[#fe5617]">
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-[#ca03fc]">
             Get in touch
           </h2>
         </div>
         <div className="flex flex-col items-center md:flex-row gap-[150px] justify-center">
           <div className="flex flex-col space-y-5 text-lg md:text-xl font-semibold">
             <div className="flex items-center gap-3">
-              <FaLocationDot className="text-[#fe5617]" size={20} />
+              <FaLocationDot className="text-[#ca03fc]" size={20} />
               <span>Salem</span>
             </div>
             <div className="flex items-center gap-3">
-              <FaPhoneAlt className="text-[#fe5617]" size={20} />
+              <FaPhoneAlt className="text-[#ca03fc]" size={20} />
               <span>9788583223</span>
             </div>
             <div className="flex items-center gap-3">
-              <FaEnvelope className="text-[#fe5617]" size={20} />
+              <FaEnvelope className="text-[#ca03fc]" size={20} />
               <span>monikajothi07@gmail.com</span>
             </div>
             <div className="flex flex-col items-center gap-3">
@@ -71,13 +79,13 @@ const Contact = () => {
               <div className="flex gap-4">
                 <a
                   href="https://github.com/Monika-RJ"
-                  className="hover:text-[#fe5617]"
+                  className="hover:text-[#d48dfc]"
                 >
                   <FaGithub size={29} />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/monika-r-j/"
-                  className="hover:text-[#fe5617]"
+                  className="hover:text-[#d48dfc]"
                 >
                   <FaLinkedin size={29} />
                 </a>
@@ -90,7 +98,7 @@ const Contact = () => {
             onSubmit={handleSubmit}
             className="flex flex-col gap-5 w-full max-w-md"
           >
-            <h2 className="text-2xl font-bold text-[#fe5617] text-center">
+            <h2 className="text-2xl font-bold text-[#ca03fc] text-center">
               Send a Message
             </h2>
             <input
@@ -121,7 +129,7 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="bg-[#fe5617] text-white py-3 rounded-md font-semibold hover:bg-[#d44810] disabled:opacity-50"
+              className="bg-[#ca03fc] text-white py-3 rounded-md font-semibold hover:bg-[#d44810] disabled:opacity-50"
               disabled={isSubmitting}
             >
               {isSubmitting ? "Sending..." : "Send Message"}

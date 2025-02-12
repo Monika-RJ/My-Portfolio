@@ -46,19 +46,19 @@ const About = () => {
     <div id="about" className="bg-[#ffffff] min-h-screen flex items-center">
       <div className="max-w-[90%] md:max-w-[75%] mx-auto font-inter space-y-10 py-10">
         {/* Header */}
-        <h1 className="text-4xl md:text-5xl font-bold text-center text-[#fe5617]">
+        <h1 className="text-4xl md:text-5xl font-bold text-center text-[#ca03fc]">
           About Me
         </h1>
 
         {/* About Me Section */}
         <p className="text-lg md:text-xl text-gray-700 text-center leading-relaxed">
-  I’m <span className="font-bold text-[#fe5617]">Monika Jothi</span>, a passionate 
-  <span className="font-bold text-[#fe5617]"> Full Stack Developer</span> skilled in 
-  building scalable <span className="font-bold text-[#fe5617]">MERN stack</span> applications, 
+  I’m <span className="font-bold text-[#ca03fc]">Monika Jothi</span>, a passionate 
+  <span className="font-bold text-[#ca03fc]"> Full Stack Developer</span> skilled in 
+  building scalable <span className="font-bold text-[#ca03fc]">MERN stack</span> applications, 
   AI-driven solutions, and data-driven systems. With expertise in 
-  <span className="font-bold text-[#fe5617]"> Machine Learning (ML), Deep Learning (DL), and Data Analysis</span>,  
+  <span className="font-bold text-[#ca03fc]"> Machine Learning (ML), Deep Learning (DL), and Data Analysis</span>,  
   I have worked on real-world projects that leverage AI for intelligent decision-making.  
-  Currently, I'm a pre-final year <span className="font-bold text-[#fe5617]">
+  Currently, I'm a pre-final year <span className="font-bold text-[#ca03fc]">
   B.Tech Artificial Intelligence & Data Science</span> student,  
   continuously exploring new technologies to build impactful solutions.
 </p>
@@ -66,7 +66,7 @@ const About = () => {
 
         {/* Skills Section */}
         <div className="space-y-8">
-  <h2 className="text-2xl font-bold text-[#fe5617] text-center">
+  <h2 className="text-2xl font-bold text-[#ca03fc] text-center">
     My Skills
   </h2>
   <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">

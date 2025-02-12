@@ -11,7 +11,7 @@ const Header = () => {
       <div className="max-w-[90%] mx-auto py-3 flex items-center justify-between font-inter">
         {/* Logo */}
         <div>
-          <h1 className="text-[2.5rem] font-bold text-[#000] hover:text-[#fe5617] ">
+          <h1 className="text-[2.5rem] font-bold text-[#000] hover:text-[#ca03fc] ">
             Monika R J
           </h1>
         </div>
@@ -20,7 +20,7 @@ const Header = () => {
         <div className="lg:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className=" transition-all duration-500 ease-in text-[#fe5617] "
+            className=" transition-all duration-500 ease-in text-[#ca03fc] "
           >
             {isMenuOpen ? <HiX size={29} /> : <HiMenuAlt3 size={29} />}
           </button>
@@ -34,21 +34,21 @@ const Header = () => {
         >
           <ul className="flex flex-col gap-3 lg:flex-row lg:items-center lg:gap-5 text-[14px] font-semibold">
            <Link to="home" smooth={true} duration={500}>
-           <li className="hover:text-[#fe5617] cursor-pointer transition-transform duration-300 ease-in transform hover:translate-y-[-7px] ">
+           <li className="hover:text-[#ca03fc] cursor-pointer transition-transform duration-300 ease-in transform hover:translate-y-[-7px] ">
               Home
             </li></Link>
             <Link to="about" smooth={true} duration={500}>
-            <li className="hover:text-[#fe5617] cursor-pointer transition-transform duration-300 ease-in transform hover:translate-y-[-7px] ">
+            <li className="hover:text-[#ca03fc] cursor-pointer transition-transform duration-300 ease-in transform hover:translate-y-[-7px] ">
               About
             </li>
             </Link>
            <Link to="project" smooth={true} duration={500}>
-           <li className="hover:text-[#fe5617] cursor-pointer transition-transform duration-300 ease-in transform hover:translate-y-[-7px] ">
+           <li className="hover:text-[#ca03fc] cursor-pointer transition-transform duration-300 ease-in transform hover:translate-y-[-7px] ">
               Project
             </li>
            </Link>
             <Link to="contact" smooth={true} duration={500}>
-            <li className="hover:text-[#fe5617] cursor-pointer transition-transform duration-300 ease-in transform hover:translate-y-[-7px] ">
+            <li className="hover:text-[#ca03fc] cursor-pointer transition-transform duration-300 ease-in transform hover:translate-y-[-7px] ">
               Contact
             </li>
             </Link>
@@ -61,13 +61,13 @@ const Header = () => {
           >
             <a
               href="https://github.com/Monika-RJ"
-              className="  hover:text-[#fe5617] "
+              className="  hover:text-[#ca03fc] "
             >
               <FaGithub size={29} />
             </a>
             <a
               href="https://www.linkedin.com/in/monika-r-j/"
-              className="hover:text-[#fe5617]"
+              className="hover:text-[#ca03fc]"
             >
               <FaLinkedin size={29} />
             </a>
@@ -79,13 +79,13 @@ const Header = () => {
         <div className="hidden lg:flex w-[100px] items-center justify-between">
           <a
             href="https://github.com/Monika-RJ"
-            className="hover:text-[#fe5617]"
+            className="hover:text-[#ca03fc]"
           >
             <FaGithub size={29} />
           </a>
           <a
             href="https://www.linkedin.com/in/monika-r-j/"
-            className="hover:text-[#fe5617]"
+            className="hover:text-[#ca03fc]"
           >
             <FaLinkedin size={29} />
           </a>
