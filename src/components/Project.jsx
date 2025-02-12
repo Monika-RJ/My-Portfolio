@@ -39,7 +39,7 @@ const Project = () => {
  purchasing choices.
             </p>
             <a
-              href="https://github.com/Monika-RJ/e-commerce-platform"
+              href="https://e-commerce-platform-fe.onrender.com/"
               className="text-[#ca03fc] text-center font-bold text-lg hover:underline"
             >
               Live Demo
